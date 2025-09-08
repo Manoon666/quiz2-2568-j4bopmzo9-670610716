@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Button, Stack, Title, Divider, Container } from "@mantine/core";
 import { v4 as uuidv4 } from "uuid";
+import ModalRegister from "../components/Modal";
 
 type FoodItem = {
   id: string;
@@ -20,17 +21,20 @@ export default function FoodTracker() {
       <Title order={2} mb="md">
         Food Tracker
       </Title>
-      <Button>Add Food Item</Button>
-      {/* Type additional AddFoodModal here. */}
+      <Button
+    
+    >Add Food Item</Button>
 
-      <Divider my="md" />
+    {/* Type additional AddFoodModal here. */}
+    <Divider my="md" />
       {/* Type additional total cost here. */}
       <Title order={4}>Total cost: {} Baht</Title>
-      <Stack my="sm">{/* Type additional text here. */}</Stack>
-
+      <Stack my="sm">{<text order={5}>Main Course: {} Baht</text>}</Stack>
+      <Stack my="sm">{<text order={4}>Drink: {} Baht</text>}</Stack>
+      <Stack my="sm">{<text order={4}>Dessert: {} Baht</text>}</Stack>
       <Divider my="md" />
       {/* Type additional card here. */}
-
+<p></p>
       <Stack>{/* Type additional food card list here. */}</Stack>
     </Container>
   );

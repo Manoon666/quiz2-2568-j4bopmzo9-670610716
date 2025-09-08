@@ -13,6 +13,11 @@ const theme = createTheme({
       dark: "yellow",
       light: "violet",
     }),
+    Pawaris: virtualColor({
+      name: "Pawaris",
+      dark: "blue",
+      light: "red",
+    }),
   },
 });
 

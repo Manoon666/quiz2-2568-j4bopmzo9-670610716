@@ -1,5 +1,6 @@
 import { Card, Group, Badge, ActionIcon, Text } from "@mantine/core";
 import { IconTrash } from "@tabler/icons-react";
+import { useState } from "react";
 
 type FoodProps = {
   name: string;
